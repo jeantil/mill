@@ -392,7 +392,7 @@ options](#twirl-configuration-options) are applicable.
 Mill commands are targets on a named build. For example if your build is called `core`:
 - compile: `core.compile`
 - run: not implemented. It can be emulated with `mill -w runBackground` but this 
-doesn't do any kind of classloading optimization and may be slower thanPlay's usual `run`. 
+doesn't do any kind of classloading optimization and may be slower than Play's usual `run`. 
 - start: `core.start` or `core.run`
 - test: `core.test`
 - dist: not implemented, however you can use the equivalent `core.assembly` 
