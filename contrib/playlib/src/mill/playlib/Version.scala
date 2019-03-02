@@ -11,7 +11,5 @@ private[playlib] trait Version extends Module{
     playVersion().split("\\.").take(2).mkString(".")
   }
 
-  private[playlib] def component(id: String): Target[Dep] = T{
-    ivy"com.typesafe.play::$id::${playVersion()}"
-  }
+  private[playlib] def component(id: String) = T.task{ ivy"com.typesafe.play::$id::${playVersion()}" }
 }
